@@ -1,0 +1,16 @@
+.commonFilterWrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    &.pb0{
+        padding-bottom: 0px;
+    }
+    .leftWrap{
+        display: flex;
+        gap: 20px;
+    }
+    .rightWrap{
+        display: flex;
+        gap: 20px;
+    }
+}

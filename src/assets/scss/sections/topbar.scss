@@ -1,0 +1,146 @@
+.topbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    border: none;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    .menuIcon{
+        cursor: pointer;
+    }
+    .right-wrap {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .modeWrap{
+            border: 1px solid var(--border-color-one);
+            display: inline-block;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover{
+                background-color: var(--main-color-one);
+                color: var(--main-white-color);
+            }
+        }
+        .notificationWrap{
+            border: 1px solid var(--border-color-one);
+            display: inline-block;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            .notificationCount{
+                position: absolute;
+                top: -15px;
+                right: -8px;
+                background-color: var(--main-color-one);
+                color: var(--main-white-color);
+                font-size: 10px;
+                padding: 2px 5px;
+                width: 25px;
+                height: 25px;
+                line-height: 20px;
+                border-radius: 50%;
+                font-weight: 600;
+                transition: all 300ms;
+            }
+        }
+        .store-anchor {
+            font-weight: 500;
+        }
+
+        .store-anchor i {
+            color: var(--main-color-one);
+            margin-right: 3px;
+        }
+        .StoreWrap{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            position: relative;
+            .storeName{
+                cursor: pointer;
+            }
+            .storeIcon{
+                font-size: 20px;
+                border: 1px solid var(--border-color-one);
+                display: inline-block;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+                position: relative;
+            }
+            .dropdownWrapper{
+                position: absolute;
+                top: calc(100% + 10px);
+                right: 0px;
+                width: 180px;
+                background-color: #fff;
+                visibility: hidden;
+                opacity: 0;
+                &.active{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                //border: 1px solid var(--border-color-one);
+                //padding: 10px 0;
+                .dropdown-item{
+                    display: block;
+                    padding: 10px;
+                    transition: all 300ms;
+                    &:hover{
+                        background-color: var(--main-color-one);
+                        color: #fff;
+                    }
+                    +.dropdown-item{
+                        border-top: 1px solid var(--border-color-one);
+                    }
+                }
+            }
+        }
+        .searchWrap{
+            background-color: #fff;
+            border-radius: 30px;
+            border: var(--border-color-one);
+            box-shadow: 0 0 1px 0 rgba(#000,.25);
+            .searchIcon{
+                position: relative;
+                left: 20px;
+                top: 5px;
+            }
+            input{
+                min-width: 300px;
+                height: 45px;
+                padding: 5px 20px 5px 30px;
+                border: none;
+                outline: none;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+        }
+    }
+
+    .left-wrap {
+        .pageTitle{
+            font-size: 24px;
+            line-height: 1.6;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+
+.cardList{
+    padding: 20px;
+    .line-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 5px 0;
+        color: var(--pragraph-color-two);
+        font-size: 14px;
+        line-height: 24px;
+        &:before{
+            width: 10px;
+            height: 10px;
+            border: 1px solid var(--border-color-one);
+            border-radius: 2px;
+            content: "";
+            margin-right: 10px;
+        }
+        .title,.amount{
+            white-space: nowrap;
+        }
+        .line{
+            flex-grow: 1;
+            border-bottom: 1px dashed var(--pragraph-color-two);
+            margin: 0 10px;
+
+        }
+    }
+}

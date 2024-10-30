@@ -1,0 +1,12 @@
+.cardHeader{
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color-one);
+    &.noborder{
+        border-bottom: none;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+}

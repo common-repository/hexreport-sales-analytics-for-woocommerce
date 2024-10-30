@@ -1,0 +1,16 @@
+.LayoutContainer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.margin-top-30 {
+	.chartWithListWrapper {
+		.donChart {
+			.no-data {
+				color: #67708B;
+				text-align: center;
+			}
+		}
+	}
+}

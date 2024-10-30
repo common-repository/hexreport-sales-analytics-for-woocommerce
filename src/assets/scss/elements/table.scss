@@ -1,0 +1,80 @@
+.table{
+    //width: 100%;
+    padding: 20px;
+    .table-bottom-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span,a{
+            border: 1px solid var(--border-color-one);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: var(--pragraph-color);
+            transition: all 300ms;
+            &:hover{
+                background-color: var(--black-color);
+                color: #fff;
+            }
+        }
+        span{
+            margin: 0 5px;
+            &:hover{
+                background-color: transparent;
+                color: var(--pragraph-color);
+            }
+        }
+        .prev{
+            &:disabled{
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+            cursor: pointer;
+        }
+        .currentPage{
+            cursor: not-allowed;
+        }
+        .next{
+            cursor: pointer;
+            &:disabled{
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+    }
+    .table-stripped{
+        td:nth-child(even){}
+        td:nth-child(odd){}
+    }
+    .infowrap{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: var(--pragraph-color);
+        font-size: 12px;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        color: var(--pragraph-color);
+    }
+    thead{
+        th{
+            border: 1px solid var(--border-color-one);
+            font-weight: 500;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    td{
+        border: 1px solid var(--border-color-one);
+        font-weight: 400;
+        padding: 8px 10px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .pagination{
+        &.center{}
+        &.right{}
+    }
+}

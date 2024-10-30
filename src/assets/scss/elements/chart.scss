@@ -1,0 +1,21 @@
+.chartWrapper{
+    background-color: #fff;
+    padding: 20px;
+    max-width: 100%;
+    .topPart{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .title{
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        .selectWrap{
+            .selectField{
+                font-size: 12px;
+            }
+        }
+    }
+}
+

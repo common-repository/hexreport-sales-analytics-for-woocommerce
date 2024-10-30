@@ -1,0 +1,16 @@
+.selectField {
+    border: 1px solid var(--border-color-one);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    &.noborder {
+        select {
+            border: none;
+        }
+    }
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+

@@ -1,0 +1,15 @@
+.helpWanted{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+    .textWrapper{
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid var(--border-color-one);
+        padding: 10px 20px;
+        a{
+            color: var(--main-color-one);
+        }
+    }
+}
